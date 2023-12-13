@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<html>
+
+    <head>
+        <title>Disaster Strikes</title>
+        <link rel="stylesheet" href="homePage.css", type="text/css"/>
+
+    </head>
+
+    <body>
+        <ul class = 'navbar'>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a class="active" href="DisastersTimeOfYear.html">Analysis of Annual Trends</a></li>
+            <li><a href="Disaster2018CaseStudy.html">2018 Demographic Analysis</a></li>
+            <li><a href="disasterCaseStudies.html">Additional Resources</a></li>
+            <li><a href="aboutPage.html">About</a></li>
+          </ul>
+
+
+        <h1> Natural Disasters Tend to Take Place During Specific Times Of Year. <br>What Are These Trends?</h1>
+          <div class = 'visualizationTitles'>
+          <h2>Number of Disasters Per Country Each Month</h2>
+          </div>
+          <div class = 'countMapContainer'>
+            <div id = 'countMap'>
+              <div class='tableauPlaceholder' id='viz1701832641746' style='position: relative'><noscript><a href='#'><img alt='December ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nu&#47;numDisasterMonthMAP&#47;testNumDisMonth&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='numDisasterMonthMAP&#47;testNumDisMonth' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;nu&#47;numDisasterMonthMAP&#47;testNumDisMonth&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1701832641746');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.5)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
+            <div id = 'countMapAnalysis'>
+              <p>
+              This map is a wonderful overview of the number of disasters experienced by each country in the dataset for each month of the year. 
+              While the visualizaitons on the main page showed trends by continent and year, those are such large areas of land with billions of individuals living in different parts, that a more granular analysis is necessary. 
+              Additionally, disasters happen at different times of the year, so a monthly analysis is necessary.
+              From this map, we can see that, in months like January, more countries in the Southern Hemisphere are dark blue, which indicates a higher number of natural disasters. In July and August, the dark blue shifts to the Northern Hemisphere.
+            </p>
+            <div id = 'countMapDescription'>
+              <i>Note for getting the most out of this map:
+                <ul>
+                  <li>Using the tool on the right side of the map, you can press the arrows or use the dropdown menu to switch between months.</li> 
+                  <li>For each month, hovering over a country of interest will show you a treemap that illustrates the distribution of the different kinds of disasters that occurred in that country in the specific month you selected.</li>           
+                </ul>
+              </i>
+              </div>
+          </div>
+        </div>
+          <div class = 'visualizationTitles'>
+            <h2>Overall Trends Each Month: January, July, and August are Standouts</h2>
+          </div>
+          <div class = 'countBarContainer'>
+            <div id = 'countBarAnalysis'>
+              <p>
+                Looking at the tooltips for each month, we can see that Asia has the most natural disasters, with the summer months containing the most disasters. 
+                North America follows a similar pattern and the second highest total number of natural disasters. August-October are the three months with the highest number of disasters, which are some of the warmest months in North America.
+                In Europe there is a peak in the number of disasters in January and one in July. This might indicate more winter-weather disasters like snow storms or take into account the mediterranean climate in the south in addition to the arctic climate further north.
+                <br><br>
+                The peak of Africa's natural disasters is in January, which makes sense since much of the continent is in the Southern Hemisphere, 
+                where the warmer months are usually November to around March. Oceania follows this general trend as well, with the majority of the disasters in this continent
+                occurring in December-April.
+                South America, anotehr continent with a significant amount of landmass in the Southern Hemisphere also has the highest number of disasters between December-April. 
+          
+            </p>
+          </div>
+            <div id = 'countBar'>
+            <div class='tableauPlaceholder' id='viz1702427344351' ><noscript><a href='#'><img alt='disasterMonthBar ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;di&#47;disasterMonthBar&#47;disasterMonthBar&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='disasterMonthBar&#47;disasterMonthBar' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;di&#47;disasterMonthBar&#47;disasterMonthBar&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1702427344351');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.6)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    
+          </div>
+          </div>
+          <div id = 'countBarConclusion'>
+            <p>Overall, January, June, and August are the months that had the most disasters between 1970-2021 and this is generally the trend across the different continents. 
+              This temporal trend is so important to recognize because it can help individuals and leaders to determine when they need to be the most prepared for disasters in their area. 
+              Asia has so many more disasters overall, so the information in the tooltip doesn't show a particular trend within the continent. However, patterns for Africa are particularly notable since there is such a significant spike in natural disasters in January.
+              <br><br>
+              Regardless of the hemisphere people live in, it makes sense that the summer and winter months will have the most extreme weather due to the natural cycles of the seasons. 
+              Since climate change is causing more extreme weather, often regardless of the time of year, it will be interesting to see whether these trends will change as temperatures become more unpredictable or severe.
+              It is important to note that, some of the natural disasters, like earthquakes, in this dataset are not related to climate change, but these are not among the most common disasters, so they probably don't affect the general trends of the data.
+            </p>
+            </div>
+         
+        <ul class = 'signature'>
+          <p>Kaitlyn Crowley DATA303</p>
+        </ul>
+    </body>
+         
+</html>

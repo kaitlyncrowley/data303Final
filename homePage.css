@@ -1,0 +1,277 @@
+/* General Layout Specifications */
+h1 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+  margin-left: 20px;
+  font-size: 2rem;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+img {
+  max-width: 300x;
+  max-height: 700px;
+
+}
+
+.subTitle{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.visualizationTitles{
+  margin-left: 40px;
+  padding-top: 3%;
+}
+
+#introduction{
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+
+  font-size: 1.3rem;
+}
+
+.signature{
+  margin-right: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+  width: 100%;
+  text-align: right;
+  color: white;
+}
+
+
+.active {
+  background-color: #1fc7ab;
+}
+
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar li {
+  float: left;
+  }
+
+
+.descriptionList {
+  list-style-type: disc;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}  
+  
+/* Home Page */
+#barChart {
+    max-width: 90%;
+    flex-basis: 10000px;
+  }
+
+
+#disasterTimelineDescription {
+  padding-left: 40px;
+  text-justify: center;
+  font-size: 1.1rem;
+}
+
+.barChartContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#dashDescription {
+  margin-left: 40px;
+  margin-top: 5px;
+  text-justify: center;
+  font-size: 1rem;
+}
+
+#dashAnalysis{
+  margin-left: 10px;
+  margin-right: 40px;
+  font-size: 1.1rem;
+}
+
+#dashSize {
+  max-width: 100%;
+  flex-basis: 1000px;
+}
+
+.dashContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#costsChart {
+  max-width: 100%;
+  flex-basis: 10000px;
+}
+
+#costsAnalysis {
+padding-left: 60px;
+text-justify: center;
+font-size: 1.1rem;
+}
+
+#costsDescription {
+  margin-left: 60px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  text-justify: center;
+  font-size: 1rem;
+}
+
+.costsChartContainer {
+display: flex;
+flex-direction: row;
+align-items: center;
+align-content: center;
+justify-content: center;
+margin-left: 40px;
+margin-right: 40px;
+margin-bottom: 40px;
+}
+
+/* Time of Year Page */
+#countMap {
+  max-width: 100%;
+  flex-basis: 10000px;
+}
+#countMapDescription {
+  margin-left: 10px;
+  margin-top: 40px;
+  text-justify: center;
+  font-size: 1rem;
+}
+#countMapAnalysis {
+  margin-left: 10px;
+  text-justify: center;
+  font-size: 1.1rem;
+  }
+.countMapContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  }
+
+  #countBar {
+   max-width: 100%;
+   flex-basis: 2300px;
+  }
+  #countBarAnalysis {
+
+    text-justify: center;
+    font-size: 1.1rem;
+    flex-basis: 1000px;
+
+    }
+  #countBarConclusion{
+    margin-left:40px;
+    margin-right:40px;
+    font-size: 1.1rem;
+
+  }
+  .countBarContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    }
+
+/* 2018 Page */
+
+.mapContainer{
+  display: flex;
+  
+}
+
+.mapDetailsAffected{
+  flex: 0.5;
+  margin-left: 4%;
+  font-size: 1.2rem;
+}
+.mapDetailsDeaths{
+  flex: 0.5;
+  margin-right: 4%;
+  font-size: 1.2rem;
+}
+
+.scatterPlot {
+
+  flex-basis: 50%;
+ }
+ .scatterAnalysis {
+
+   text-justify: center;
+   font-size: 1.1rem;
+   flex-basis: 50%;
+   margin-right:20px;
+   margin-left: 20px;
+
+   }
+ .scatterContainer {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   margin-left: 40px;
+   margin-right: 40px;
+   margin-bottom: 40px;
+   }
+
+
+/* About Page */
+
+.aboutContainer {
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+  }

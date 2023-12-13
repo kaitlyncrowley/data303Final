@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<html>
+
+    <head>
+        <title>Disaster Strikes</title>
+        <link rel="stylesheet" href="homePage.css", type="text/css"/>
+
+    </head>
+
+    <body>
+        <ul class = 'navbar'>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="DisastersTimeOfYear.html">Analysis of Annual Trends</a></li>
+            <li><a href="Disaster2018CaseStudy.html">2018 Demographic Analysis</a></li>
+            <li><a href="disasterCaseStudies.html">Additional Resources</a></li>
+            <li><a class="active" href="aboutPage.html">About</a></li>
+          </ul>
+    <h1>About the Project</h1>
+    <div class = 'aboutContainer'>
+    <h2>Project Inspiration</h2> 
+    <p>Hi! My name is Kaitlyn Crowley. I am a student at William & Mary studying Data Science and Sociology and I have a passion for learning about climate change and 
+        the impacts that it has on communities and individuals. Last semester, I studied abroad in three different countries as part of a program that focused on climate change, specifically in Morocco, Nepal, and Ecuador. 
+        Throughout the semester, we learned about the droughts impacting farmers in Morocco, monsoons and glacial lake outburst floods in the Himalayas in Nepal, and rising temperatures in Ecuador.
+        Looking at these countries as case studies, I thought that investigating the trends of natural disasters globally would be very rewarding.
+        Since climate change contributes to increasingly severe natural disasters, I wanted to explore the current natural disaster data available.
+        <br><br>
+
+        For this project, I used the dataset: <a href = https://www.kaggle.com/datasets/brsdincer/all-natural-disasters-19002021-eosdis> ALL NATURAL DISASTERS 1900-2021</a> from Kaggle. 
+        The original data was collected from NASA's Earth Observing System Data and Information System (EOSDIS). 
+        To conduct analysis using demographic data, I combined the EOSDIS natural disaster data with the <a href = https://www.kaggle.com/datasets/keithvincentburca/world-development-data>World Development Dataset</a>, which I also downloaded from Kaggle.
+        This data is a compilation of data from the World Bank, the World Happiness Report, and Transparency International.
+        <br><br>
+
+
+    </p>
+
+    <h2>Data Pre-Processing</h2> 
+    <p>
+        The datasets were not ready to use off the shelf, so before creating any visualizations, I had to complete pre-processing. One of the main parts of this step was re-categorizing and re-naming the continent and country labels.
+        I first had to split the Americas into North and South America and categorize Central America and the Caribbean as North America. Since I created my visualizations in Tableau and joined the disaster data with the development dataset, 
+        I also had to rename many of the countries for consistency.
+        <br><br>
+        In addition to cleaning the two datasets, I merged them into a single dataframe that only included the disaster data for 2018. This step was relatively simple once the country names were consistent between the two datasets.
+        The main motivation for merging the two datasets was to calculate the number of deaths and number of people affected by natural disasters per million. I originally created the visualizations for this analysis using only the natural disaster data, but population skewed the appearance of the values significantly.
+        Using the joined dataset, it was simple to calculate the deaths per million and affected per million to create new variables in the joined dataframe.
+        Finally, in order to create many of the visualizations depicting the disaster data in terms of month, I simply added a column with the written month that corresponded with the numerical month notation in the pre-existing "Start Month" column.
+    </p>
+    <h2>Limitations of the Data</h2>
+    <p>
+        Although the data used in this project is very detailed, there are some limitations in its ability to fully communicate the geospatial and temporal trends of natural disasters.
+        One of the primary limitations of the dataset is that there is a significant amount of missing data. There is not a lot of detail available about how the data was collected, so I cannot determine why certain values are missing.
+        One reason for the missing data is that certain countries likely have different procedures for recording natural disaster data or the procedures have changed over the past 50 years. 
+        This is one of the reasons that I decided to focus on natural disasters since 1970 instead of using the complete dataset that dates back to 1900. There are only about 200 additional disasters recorded from 1900-1969, which is probably due to recording errors or limitations. 
+        Since the reliability of the data seemed to decrease as it got older, I decided to limit the timeframe of my analysis to mitigate the possibility of inaccurate analysis.
+        Finally limitation is that the disaster dataset itself does not have a data column recording the population of each country for each disaster. It would have been very interesting to have more demographic data to analyze instead of only data from 2018, even just in terms of the number of deaths and number of people affected.
+    </p>
+    <h2>Conclusion</h2>
+        <p>
+            Based on the data used in this analysis, natural disasters are increasing in frequency and severity around the world. 
+        </p>
+    <h2>Bibliography</h2>
+    Burca, K. V. (2023). World Development Data [Data file]. Available from https://www.kaggle.com/datasets/keithvincentburca/world-development-data.
+    <br>
+    <br>
+    EOSDIS. (2021). All Natural Disasters 1900-2021 [Data file]. Available from https://www.kaggle.com/datasets/brsdincer/all-natural-disasters-19002021-eosdis.
+    <br>
+    <br>
+    OCHA. (n.d.). <i>Afghanistan: Drought - 2018-2019</i>. ReliefWeb. https://reliefweb.int/disaster/dr-2018-000052-afg.
+    <br>
+    <br>
+    Smith, A. B. (2023, January 10). <i>2022 U.S. billion-dollar weather and climate disasters in historical context. NOAA Climate: Science &amp; Information for a Climate-Smart Nation</i>. https://www.climate.gov/news-features/blogs/beyond-data/2022-us-billion-dollar-weather-and-climate-disasters-historical.
+    <br>
+    <br>
+    W3Schools. (n.d.). <i>CSS Tutorial</i>. https://www.w3schools.com/css/default.asp
+    <br>
+    <br>
+    W3Schools. (n.d.). <i>HTML Tutorial</i>. https://www.w3schools.com/html/default.asp
+
+
+    <p>All code can be found on my <a href = https://github.com/kaitlyncrowley/data303Final> GitHub </a> page.</p>
+    </div>  
+ 
+    
+
+    <ul class = 'signature'>
+        <p>Kaitlyn Crowley DATA303</p>
+    </ul>
+    </body>
+
+</html>
+
+
+
